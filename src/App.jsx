@@ -7,7 +7,7 @@ import './App.css';
 
 function App() {
   const [count, setCount] = useState(0);
-  const socket = io('https://codebox-api.vercel.app');
+  const socket = io('http://localhost:3000');
   useEffect(() => {
     socket.on('connect', () => {
       console.log('connected');
